@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="Style\Style.css">
+            <title>Choose your food</title>
+        </head>
+        <body>
+            <p id="title">Choose food</p><br>
+            <p id="instructions">Instrucciones</p>
+            <label for="time">Tiempo max:</label>
+            <input type="text" id="time" name="time">
+            <button id="minutos-tiempo" onclick="getInputValue()">Segura!</button><br><br>
+            <div class="flex-container">
+                <div><button class="button-in" id="fideos">fideos</button></div>
+                <div><button class="button-in" id="salsa">salsa</button></div>
+                <div><button class="button-in" id="huevo">huevo</button></div>  
+            </div>
+
+            <button class="button-fn" id="choose">elegir</button><br>
+            <p id="minutes"></p>
+            <p id="food"></p>
+
+            <button id="reset" onclick="window.location.reload();">Resetear</button>
+        </body>
+        <script src="Script\script.js"></script>
+    </html>
