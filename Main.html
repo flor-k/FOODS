@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html>
+<!--arreglar listado, estan los numeros a la izquierda, poner tildes. cambiar boton correcto.corregir tiempo final de comida (aparece los minutos marcado). es random?? dudosophite--> 
+
+
         <head>
             <meta charset="UTF-8">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="Style\Style.css">
-            <title>Choose your food</title>
+            <title>¡Elige tu comida!</title>
         </head>
         <body>
-            <p id="title">Choose food</p><br>
-            <p id="instructions">Instrucciones</p>
-            <label for="time">Tiempo max:</label>
-            <input type="text" id="time" name="time">
-            <button id="minutos-tiempo" onclick="getInputValue()">Segura!</button><br><br>
-            <div class="flex-container">
-                <div><button class="button-in" id="fideos">fideos</button></div>
-                <div><button class="button-in" id="salsa">salsa</button></div>
-                <div><button class="button-in" id="huevo">huevo</button></div>  
+            <div id="welcome-section">
+                <p id="title">¡Elige tu comida!</p><br>
             </div>
-
-            <button class="button-fn" id="choose">elegir</button><br>
-            <p id="minutes"></p>
-            <p id="food"></p>
-
-            <button id="reset" onclick="window.location.reload();">Resetear</button>
+            <div id="front">
+                <div id="textos">
+                    <p id="instructions">Instrucciones:</p><br>
+                    <div>
+                        <ol>
+                            <li>Revisa que comida tenes en la alacena, heladera, etc...</li>
+                            <li>Pensa ¿cuanto tiempo tenes para cocinar?</li>
+                            <li>Escribi el tiempo maximo (en minutos) y toca el boton "Correcto"</li>
+                            <li>Completa la información</li>
+                            <li>Tocar el boton de "Elegir"</li>
+                            <li>Cocinar</li>
+                            <li>¡A comer!</li>
+                        </ol>
+                    </div>
+                    <label for="time">Tiempo maximo para cocinar (en minutos):</label>
+                    <br>
+                    <input type="text" id="time" name="time">
+                    <button id="minutos-tiempo" onclick="getInputValue()" >Correcto</button><br><br>
+                </div>
+                    <div class="flex-container">
+                        <div><button class="button-in" id="fideos">Fideos</button></div>
+                        <div><button class="button-in" id="salsa">Salsa</button></div>
+                        <div><button class="button-in" id="huevo">Huevo</button></div>
+                        <div><button class="button-in" id="pan">Pan</button></div> 
+                        <div><button class="button-in" id="queso">Queso</button></div>   
+                    </div>
+                    <br>
+                    <button class="button-fn" id="choose">¡Elegir!</button>
+                    <button id="reset" onclick="window.location.reload();">Resetear</button>
+                    <br>
+                    <div id="final">
+                        <p id="comidas"></p>
+                        <p id="minutes"></p>
+                        <p id="food"></p>
+                    </div>
+                </div>
         </body>
         <script src="Script\script.js"></script>
     </html>

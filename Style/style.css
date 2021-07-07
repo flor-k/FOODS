@@ -1,0 +1,71 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Yomogi', cursive;
+  }
+
+
+#welcome-section{
+    background-image: url(Images/First-view.jpg);
+    background-size: cover;
+    font-weight: 1000;
+    font-size: 2.5em;
+    opacity: 0.95;
+    color:rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#title{
+    background-color: rgba(216, 191, 216, 0.568);
+    border: black;
+    border-style: solid;
+}
+
+
+#front{
+      background-image: url(Images/back.jpg);
+      background-size: cover;
+      height: 100vh;
+      color:white;
+      font-weight: 800;
+      padding: 0;
+      text-align: center;
+  }
+
+#instructions{
+    margin: 0;
+}
+
+#textos{
+    float: center;
+    text-align: center;
+}
+
+
+
+button {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: center;
+    padding: 0% 20%;
+    
+}
