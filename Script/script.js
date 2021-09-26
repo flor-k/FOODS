@@ -69,7 +69,7 @@ document.getElementById("queso").onclick = function(){
 };
 
 document.getElementById("choose").onclick = function(){
-    var rand = Math.floor(Math.random() * PosibComi.length);
+    var rand = Math.floor(Math.random() * (PosibComi.length+1));
 
     function Resultado(){
         document.getElementById("comidas").innerHTML = (IngTengo);
